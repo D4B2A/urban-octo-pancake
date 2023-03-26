@@ -9,7 +9,16 @@ namespace INT0{
 namespace INT1{
   void enableInterrupt();
   void disableInterrupt();
-  void settupInterrupt(int state);
+  void settupInterrupt(int);
   bool readFlag();
   void resetFlag();
+}
+
+namespace PCI{
+  void enableInterrupt(int);
+  void disableInterrupt(int);
+  void addPin(int);
+  void removePin(int);
+  bool readFlag(int);
+  void resetFlag(int);
 }
